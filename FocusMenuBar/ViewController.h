@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "FocusMenuBar.h"
+@interface ViewController : UIViewController<FocusMenuBarDataSource, FocusMenuBarDelegate>
+@property (weak, nonatomic) IBOutlet FocusMenuBar *menuBar;
 
 @end
